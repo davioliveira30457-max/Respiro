@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Projeto • Respiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Sobre o Projeto Respiro</h1>
+    <p>Transformando cuidado em conexão</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Conteúdo</a>
+    <a href="ferramentas.html">Ferramentas</a>
+    <a href="autoavaliacao.html">Autoavaliação</a>
+    <a href="comunidade.html">Comunidade</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>💫 Nossa Missão</h2>
+      <p>Inspirar o autocuidado emocional e tornar o diálogo sobre saúde mental mais acessível e humano.  
+      O Respiro nasceu como um projeto de impacto social e educativo, voltado à conscientização sobre equilíbrio emocional.</p>
+    </section>
+
+    <section>
+      <h2>🌱 Visão</h2>
+      <p>Ser uma plataforma de referência em educação emocional, promovendo a empatia, o apoio e a esperança.</p>
+    </section>
+
+    <section>
+      <h2>🧑‍💼 Nossa Equipe</h2>
+      <p>Formada por estudantes, comunicadores e profissionais da área de saúde, o Respiro é um movimento colaborativo que acredita na força da informação e da empatia.</p>
+    </section>
+
+   <section id="contato">
+  <h2>📬 Fale Conosco</h2>
+  <p>Preencha seus dados e envie sua mensagem. Responderemos o mais rápido possível.</p>
+
+ <form id="formContato">
+  <label for="nome">Nome Completo:</label>
+  <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+  <label for="assunto">Assunto:</label>
+  <input type="text" id="assunto" name="assunto" placeholder="Motivo da mensagem" required>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="6" required></textarea>
+
+  <button type="submit" class="btn">Enviar Mensagem</button>
+</form>
+
+<p id="resposta" style="color:green; margin-top:10px;"></p>
+
+<!-- Aqui vai o JavaScript -->
+<script>
+const form = document.getElementById('formContato');
+const resposta = document.getElementById('resposta');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); // Evita recarregar a página
+
+  // Coleta os valores
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const assunto = document.getElementById('assunto').value;
+  const mensagem = document.getElementById('mensagem').value;
+
+  // Mensagem de confirmação
+  resposta.textContent = `Obrigado, ${nome}! Sua mensagem foi recebida. Retornaremos para ${email}.`;
+
+  // Limpa o formulário
+  form.reset();
+});
+</script>
+
+
+  <!-- Mensagem de sucesso -->
+  <p id="resposta" style="color:green; margin-top:10px;"></p>
+</section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <!-- Sobre o projeto -->
+    <div class="footer-section">
+      <h3>Respiro</h3>
+      <p>Um espaço digital para cuidar da mente e do bem-estar emocional. Informação, apoio e conexão.</p>
+    </div>
+
+    <!-- Navegação rápida -->
+    <div class="footer-section">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="conteudo.html">Conteúdo</a></li>
+        <li><a href="ferramentas.html">Ferramentas</a></li>
+        <li><a href="autoavaliacao.html">Autoavaliação</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <p>Email: <a href="mailto:contato@respiro.org">contato@respiro.org</a></p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Redes sociais:</p>
+      <p>
+        <a href="#" target="_blank">Instagram</a> | 
+        <a href="#" target="_blank">Facebook</a> | 
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Respiro • Todos os direitos reservados 💜</p>
+  </div>
+</footer>
+</body>
+</html>

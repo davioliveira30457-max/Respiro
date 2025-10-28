@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoavaliação • Respiro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🧠 Autoavaliação Mental</h1>
+    <p>Reflexão pessoal sobre como você tem se sentido</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="conteudo.html">Conteúdo</a>
+    <a href="ferramentas.html">Ferramentas</a>
+    <a href="autoavaliacao.html">Autoavaliação</a>
+    <a href="comunidade.html">Comunidade</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>📝 Teste de Bem-Estar</h2>
+      <p>Responda com sinceridade. Baseado no índice de bem-estar WHO-5.</p>
+
+      <form id="bemestarForm">
+        <ol>
+          <li>Eu me senti alegre e de bom humor. <br><select name="q1"><option value="0">Nunca</option><option value="5">Sempre</option></select></li>
+          <li>Eu me senti calmo(a) e relaxado(a). <br><select name="q2"><option value="0">Nunca</option><option value="5">Sempre</option></select></li>
+          <li>Eu me senti cheio(a) de energia. <br><select name="q3"><option value="0">Nunca</option><option value="5">Sempre</option></select></li>
+          <li>Ao acordar, senti-me descansado(a). <br><select name="q4"><option value="0">Nunca</option><option value="5">Sempre</option></select></li>
+          <li>Minha vida esteve cheia de coisas interessantes. <br><select name="q5"><option value="0">Nunca</option><option value="5">Sempre</option></select></li>
+        </ol>
+        <button type="button" class="btn" onclick="avaliarBemEstar()">Ver Resultado</button>
+      </form>
+
+      <div id="resultadoBemestar"></div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <!-- Sobre o projeto -->
+    <div class="footer-section">
+      <h3>Respiro</h3>
+      <p>Um espaço digital para cuidar da mente e do bem-estar emocional. Informação, apoio e conexão.</p>
+    </div>
+
+    <!-- Navegação rápida -->
+    <div class="footer-section">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="conteudo.html">Conteúdo</a></li>
+        <li><a href="ferramentas.html">Ferramentas</a></li>
+        <li><a href="autoavaliacao.html">Autoavaliação</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </div>
+
+    <!-- Contato -->
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <p>Email: <a href="mailto:contato@respiro.org">contato@respiro.org</a></p>
+      <p>Telefone: (11) 99999-9999</p>
+      <p>Redes sociais:</p>
+      <p>
+        <a href="#" target="_blank">Instagram</a> | 
+        <a href="#" target="_blank">Facebook</a> | 
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Respiro • Todos os direitos reservados 💜</p>
+  </div>
+</footer>
+</body>
+</html>
